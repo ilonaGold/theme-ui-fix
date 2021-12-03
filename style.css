@@ -1,0 +1,60 @@
+:root {
+  --wine-red: #c7375f;
+  --bright-red: #d42d2f;
+  --dark-green: #344d2f;
+  --light-green: #77a047;
+  --gold: #fac57d;
+  --snow: #f0f4f7;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: var(--light-green);
+  height: 100vh;
+}
+
+.container {
+  background: var(--snow);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 0.75em;
+  min-width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  font-size: 1.5rem;
+  font-family: "Rubik Beastly", cursive;
+  color: var(--bright-red);
+  min-height: 40vh;
+}
+
+button {
+  padding: 1em 2em;
+  border: none;
+  font-size: 1.5rem;
+  background-color: var(--bright-red);
+  color: var(--snow);
+  border-radius: 999px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--wine-red);
+}
